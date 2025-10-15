@@ -4,6 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>aymenawol</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,12 +14,11 @@
     <!-- Top row -->
     <div class="grid-cell top-left">
       <section class="section about">
-        <h2>About Me</h2>
-        <p>I'm a passionate software engineer with expertise in web development and modern technologies. I love creating elegant solutions to complex problems.</p>
-        <p>With years of experience, I've worked on everything from small startups to large-scale enterprise applications.</p>
+        <h2>About</h2>
+        <p>Software engineer and game developer focused on building clean, functional applications. Passionate about web technologies and interactive experiences.</p>
         <div class="button-group">
-          <button class="btn" onclick="navigateTo('skills')">View Skills</button>
-          <button class="btn-back" onclick="navigateTo('hero')">← Go Back</button>
+          <button class="btn" onclick="navigateTo('skills')">Skills →</button>
+          <button class="btn-back" onclick="navigateTo('hero')">← Back</button>
         </div>
       </section>
     </div>
@@ -24,17 +26,23 @@
     <div class="grid-cell top-right">
       <section class="section skills">
         <h2>Skills</h2>
-        <ul>
-          <li>JavaScript / TypeScript</li>
-          <li>React / Vue / Angular</li>
-          <li>Node.js / Express</li>
-          <li>Python / Django / Flask</li>
-          <li>SQL / MongoDB</li>
-          <li>AWS / Docker</li>
-        </ul>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <p>HTML/CSS/JS · TypeScript · React · Tailwind</p>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <p>Node.js/Express · Firebase · MySQL · MongoDB</p>
+          </div>
+          <div class="skill-group">
+            <h3>Game Dev</h3>
+            <p>C++ · C#</p>
+          </div>
+        </div>
         <div class="button-group">
-          <button class="btn" onclick="navigateTo('projects')">See Projects</button>
-          <button class="btn-back" onclick="navigateTo('about')">← Go Back</button>
+          <button class="btn" onclick="navigateTo('projects')">Projects →</button>
+          <button class="btn-back" onclick="navigateTo('about')">← Back</button>
         </div>
       </section>
     </div>
@@ -49,7 +57,8 @@
         </h1>
         <div class="hero-subtitle">
           <p class="subtitle-left">Software Engineer</p>
-          <p class="subtitle-right">Web Developer</p>
+          <p class="subtitle-center">Web Developer</p>
+          <p class="subtitle-right">Game Developer</p>
         </div>
         <button class="btn hero-btn" onclick="navigateTo('about')">Learn About Me</button>
       </section>
@@ -60,11 +69,47 @@
     <div class="grid-cell bottom-left">
       <section class="section projects">
         <h2>Projects</h2>
-        <p>I've built innovative solutions ranging from web applications to complex systems architecture. My work focuses on clean code and exceptional UX.</p>
-        <p>From e-commerce platforms to real-time collaboration tools, each project showcases quality and innovation.</p>
+        <div class="projects-list">
+          <a href="https://agreaterearth.netlify.app/" target="_blank" class="project-preview">
+            <div class="project-image">
+              <img src="images/agreaterearth.png" alt="A Greater Earth preview">
+            </div>
+            <div class="project-text">
+              <h3>A Greater Earth</h3>
+              <p>Environmental awareness platform</p>
+            </div>
+          </a>
+          <a href="https://play.unity.com/en/games/f6e04fd4-19b9-4b9d-b663-d0df867db2e0/distracktions" target="_blank" class="project-preview">
+            <div class="project-image">
+              <img src="images/distractions.png" alt="Distracktions game preview">
+            </div>
+            <div class="project-text">
+              <h3>Distracktions</h3>
+              <p>Unity game experience</p>
+            </div>
+          </a>
+          <a href="https://african-american-literature.netlify.app/" target="_blank" class="project-preview">
+            <div class="project-image">
+              <img src="images/literature.png" alt="African American Literature preview">
+            </div>
+            <div class="project-text">
+              <h3>African American Literature</h3>
+              <p>Educational resource hub</p>
+            </div>
+          </a>
+          <a href="https://physicsdemo.netlify.app/" target="_blank" class="project-preview">
+            <div class="project-image">
+              <img src="images/physics.png" alt="Physics Demo preview">
+            </div>
+            <div class="project-text">
+              <h3>Physics Demo</h3>
+              <p>Interactive simulation</p>
+            </div>
+          </a>
+        </div>
         <div class="button-group">
-          <button class="btn" onclick="navigateTo('contact')">Contact Me</button>
-          <button class="btn-back" onclick="navigateTo('skills')">← Go Back</button>
+          <button class="btn" onclick="navigateTo('contact')">Contact →</button>
+          <button class="btn-back" onclick="navigateTo('skills')">← Back</button>
         </div>
       </section>
     </div>
@@ -72,11 +117,23 @@
     <div class="grid-cell bottom-right">
       <section class="section contact">
         <h2>Contact</h2>
-        <p>Let's work together on your next project! I'm always interested in hearing about new opportunities and collaborations.</p>
-        <p>Feel free to reach out via email or connect with me on social media.</p>
+        <div class="contact-links">
+          <a href="mailto:aymenawol070106@gmail.com" class="contact-link">
+            <span class="link-label">Email</span>
+            <span class="link-value">aymenawol070106@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/aymenawol/" target="_blank" class="contact-link">
+            <span class="link-label">LinkedIn</span>
+            <span class="link-value">aymenawol</span>
+          </a>
+          <a href="https://github.com/aymenawol" target="_blank" class="contact-link">
+            <span class="link-label">GitHub</span>
+            <span class="link-value">@aymenawol</span>
+          </a>
+        </div>
         <div class="button-group">
-          <button class="btn" onclick="navigateTo('hero')">Back to Home</button>
-          <button class="btn-back" onclick="navigateTo('projects')">← Go Back</button>
+          <button class="btn" onclick="navigateTo('hero')">Home →</button>
+          <button class="btn-back" onclick="navigateTo('projects')">← Back</button>
         </div>
       </section>
     </div>

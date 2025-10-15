@@ -14,7 +14,10 @@
         <h2>About Me</h2>
         <p>I'm a passionate software engineer with expertise in web development and modern technologies. I love creating elegant solutions to complex problems.</p>
         <p>With years of experience, I've worked on everything from small startups to large-scale enterprise applications.</p>
-        <button class="btn" onclick="navigateTo('skills')">View Skills</button>
+        <div class="button-group">
+          <button class="btn" onclick="navigateTo('skills')">View Skills</button>
+          <button class="btn-back" onclick="navigateTo('hero')">← Go Back</button>
+        </div>
       </section>
     </div>
     <div class="grid-cell top-center"></div>
@@ -29,7 +32,10 @@
           <li>SQL / MongoDB</li>
           <li>AWS / Docker</li>
         </ul>
-        <button class="btn" onclick="navigateTo('projects')">See Projects</button>
+        <div class="button-group">
+          <button class="btn" onclick="navigateTo('projects')">See Projects</button>
+          <button class="btn-back" onclick="navigateTo('about')">← Go Back</button>
+        </div>
       </section>
     </div>
 
@@ -41,8 +47,11 @@
           <span class="pronunciation"></span>
           <span class="name-text" data-pronounce="I-Men Owl">Aymen Awol</span>
         </h1>
-        <p>Software Engineer and Web Developer</p>
-        <button class="btn" onclick="navigateTo('about')">Learn About Me</button>
+        <div class="hero-subtitle">
+          <p class="subtitle-left">Software Engineer</p>
+          <p class="subtitle-right">Web Developer</p>
+        </div>
+        <button class="btn hero-btn" onclick="navigateTo('about')">Learn About Me</button>
       </section>
     </div>
     <div class="grid-cell middle-right"></div>
@@ -53,7 +62,10 @@
         <h2>Projects</h2>
         <p>I've built innovative solutions ranging from web applications to complex systems architecture. My work focuses on clean code and exceptional UX.</p>
         <p>From e-commerce platforms to real-time collaboration tools, each project showcases quality and innovation.</p>
-        <button class="btn" onclick="navigateTo('contact')">Contact Me</button>
+        <div class="button-group">
+          <button class="btn" onclick="navigateTo('contact')">Contact Me</button>
+          <button class="btn-back" onclick="navigateTo('skills')">← Go Back</button>
+        </div>
       </section>
     </div>
     <div class="grid-cell bottom-center"></div>
@@ -62,7 +74,10 @@
         <h2>Contact</h2>
         <p>Let's work together on your next project! I'm always interested in hearing about new opportunities and collaborations.</p>
         <p>Feel free to reach out via email or connect with me on social media.</p>
-        <button class="btn" onclick="navigateTo('hero')">Back to Home</button>
+        <div class="button-group">
+          <button class="btn" onclick="navigateTo('hero')">Back to Home</button>
+          <button class="btn-back" onclick="navigateTo('projects')">← Go Back</button>
+        </div>
       </section>
     </div>
   </div>

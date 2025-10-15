@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     const pron = document.querySelector('.pronunciation');
     if (pron) pron.classList.add('show-pronounce');
-  }, 2500);
+  }, 3000);
 });
 
 // Navigation system

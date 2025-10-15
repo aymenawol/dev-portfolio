@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>aymenawol</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Top row -->
+    <div class="grid-cell top-left">
+      <section class="section about">
+        <h2>About Me</h2>
+        <p>I'm a passionate software engineer with expertise in web development and modern technologies. I love creating elegant solutions to complex problems.</p>
+        <p>With years of experience, I've worked on everything from small startups to large-scale enterprise applications.</p>
+        <button class="btn" onclick="navigateTo('skills')">View Skills</button>
+      </section>
+    </div>
+    <div class="grid-cell top-center"></div>
+    <div class="grid-cell top-right">
+      <section class="section skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>JavaScript / TypeScript</li>
+          <li>React / Vue / Angular</li>
+          <li>Node.js / Express</li>
+          <li>Python / Django / Flask</li>
+          <li>SQL / MongoDB</li>
+          <li>AWS / Docker</li>
+        </ul>
+        <button class="btn" onclick="navigateTo('projects')">See Projects</button>
+      </section>
+    </div>
+
+    <!-- Middle row -->
+    <div class="grid-cell middle-left"></div>
+    <div class="grid-cell center">
+      <section class="section hero active">
+        <h1>
+          <span class="pronunciation"></span>
+          <span class="name-text" data-pronounce="I-Men Owl">Aymen Awol</span>
+        </h1>
+        <p>Software Engineer and Web Developer</p>
+        <button class="btn" onclick="navigateTo('about')">Learn About Me</button>
+      </section>
+    </div>
+    <div class="grid-cell middle-right"></div>
+
+    <!-- Bottom row -->
+    <div class="grid-cell bottom-left">
+      <section class="section projects">
+        <h2>Projects</h2>
+        <p>I've built innovative solutions ranging from web applications to complex systems architecture. My work focuses on clean code and exceptional UX.</p>
+        <p>From e-commerce platforms to real-time collaboration tools, each project showcases quality and innovation.</p>
+        <button class="btn" onclick="navigateTo('contact')">Contact Me</button>
+      </section>
+    </div>
+    <div class="grid-cell bottom-center"></div>
+    <div class="grid-cell bottom-right">
+      <section class="section contact">
+        <h2>Contact</h2>
+        <p>Let's work together on your next project! I'm always interested in hearing about new opportunities and collaborations.</p>
+        <p>Feel free to reach out via email or connect with me on social media.</p>
+        <button class="btn" onclick="navigateTo('hero')">Back to Home</button>
+      </section>
+    </div>
+  </div>
+
+  <div class="lines">
+    <div class="line vertical left"></div>
+    <div class="line horizontal top"></div>
+    <div class="line vertical right"></div>
+    <div class="line horizontal bottom"></div>
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>
